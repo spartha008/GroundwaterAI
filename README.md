@@ -1,12 +1,12 @@
 ## 📸 Dashboard Preview
 
-![GroundWaterAI Dashboard 1](images/dashboard1.png)
+!\[GroundWaterAI Dashboard 1](images/dashboard1.png)
 
-![GroundWaterAI Dashboard 2](images/dashboard2.png)
+!\[GroundWaterAI Dashboard 2](images/dashboard2.png)
 
 *Groundwater predictions use synthetic demonstration data.*
 
-# 💧 GroundWaterAI — Groundwater Prediction & Risk Assessment
+# 💧 GroundWaterAI — Groundwater Prediction \& Risk Assessment
 
 An ML-powered prototype that predicts seasonal groundwater levels and classifies groundwater depletion risk using rainfall, temperature, historical groundwater depth, and estimated water extraction.
 
@@ -14,21 +14,21 @@ Built with Python and Streamlit as a hands-on machine learning and data science 
 
 ## 🚀 Features
 
-- **Groundwater Prediction:** Estimates groundwater depth using a Gradient Boosting Regressor.
-- **Risk Classification:** Categorizes groundwater conditions into LOW, MODERATE, HIGH, and CRITICAL risk levels.
-- **Interactive Dashboard:** Adjust input parameters and explore updated predictions.
-- **Historical Trend Visualization:** Displays groundwater depth trends over time.
-- **Risk Assessment:** Provides recommendations based on the predicted risk level.
-- **District-Level Overview:** Presents a snapshot of groundwater risk across locations.
+* **Groundwater Prediction:** Estimates groundwater depth using a Gradient Boosting Regressor.
+* **Risk Classification:** Categorizes groundwater conditions into LOW, MODERATE, HIGH, and CRITICAL risk levels.
+* **Interactive Dashboard:** Adjust input parameters and explore updated predictions.
+* **Historical Trend Visualization:** Displays groundwater depth trends over time.
+* **Risk Assessment:** Provides recommendations based on the predicted risk level.
+* **District-Level Overview:** Presents a snapshot of groundwater risk across locations.
 
 ## 🛠️ Tech Stack
 
-- **Language:** Python
-- **Dashboard:** Streamlit
-- **Machine Learning:** Scikit-learn
-- **Data Processing:** Pandas, NumPy
-- **Visualization:** Plotly
-- **Version Control:** Git and GitHub
+* **Language:** Python
+* **Dashboard:** Streamlit
+* **Machine Learning:** Scikit-learn
+* **Data Processing:** Pandas, NumPy
+* **Visualization:** Plotly
+* **Version Control:** Git and GitHub
 
 ## 🧠 Machine Learning Approach
 
@@ -45,15 +45,15 @@ The prototype uses a **Gradient Boosting Regressor** to estimate groundwater dep
 
 ### Output
 
-- Predicted groundwater depth
-- Groundwater risk category
-- Risk-based recommendations
+* Predicted groundwater depth
+* Groundwater risk category
+* Risk-based recommendations
 
-## 📊 Data & Limitations
+## 📊 Data \& Limitations
 
 **Current status: Demonstration prototype.**
 
-The bundled dataset (`data/demo_groundwater.csv`) contains synthetically generated data to make the application runnable without external data downloads.
+The bundled dataset (`data/demo\_groundwater.csv`) contains synthetically generated data to make the application runnable without external data downloads.
 
 The current predictions and model metrics are intended for demonstration purposes and **do not establish real-world forecasting accuracy**.
 
@@ -61,26 +61,26 @@ The next development step is to integrate verified groundwater and rainfall obse
 
 ### Potential Data Sources
 
-- [NWDP — Karnataka Groundwater Data](https://www.nwdp.nwic.gov.in/en/dataset/ground-water-level-manual-daily-karnataka)
-- [NWDP — Karnataka Rainfall Data](https://www.nwdp.nwic.gov.in/en/dataset/rainfall-manual-daily-karnataka)
-- [Central Ground Water Board (CGWB)](https://cgwb.gov.in/ground-water-level-monitoring)
-- [India Meteorological Department (IMD)](https://mausam.imd.gov.in/responsive/rainfallinformation.php)
+* [NWDP — Karnataka Groundwater Data](https://www.nwdp.nwic.gov.in/en/dataset/ground-water-level-manual-daily-karnataka)
+* [NWDP — Karnataka Rainfall Data](https://www.nwdp.nwic.gov.in/en/dataset/rainfall-manual-daily-karnataka)
+* [Central Ground Water Board (CGWB)](https://cgwb.gov.in/ground-water-level-monitoring)
+* [India Meteorological Department (IMD)](https://mausam.imd.gov.in/responsive/rainfallinformation.php)
 
 ## 💻 Getting Started
 
 ### Prerequisites
 
-- Python installed on your system
-- Git (optional, for cloning the repository)
+* Python installed on your system
+* Git (optional, for cloning the repository)
 
 ### Installation
 
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/sparthaa08/GroundWaterAI.git
-cd GroundWaterAI
-```
+git clone https://github.com/spartha008/GroundwaterAI.git
+
+cd GroundwaterAI```
 
 **2. Create a virtual environment**
 
@@ -91,7 +91,7 @@ python -m venv .venv
 **3. Activate the environment on Windows PowerShell**
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
+.\\.venv\\Scripts\\Activate.ps1
 ```
 
 If PowerShell blocks activation, you can skip activation and use the environment's Python executable directly.
@@ -110,39 +110,69 @@ streamlit run app.py
 
 Open the local URL displayed in your terminal, usually `http://localhost:8501`.
 
-## 📁 Project Structure
+## 📁 ## 📁 Project Structure
+
+## 
 
 ```text
+
 GroundWaterAI/
+
 ├── app.py
-├── run_app.bat
+
+├── run\_app.bat
+
 ├── requirements.txt
+
+├── README.md
+
+├── .gitignore
+
+├── images/
+
+│   ├── dashboard1.png
+
+│   └── dashboard2.png
+
 ├── data/
-│   └── demo_groundwater.csv
+
+│   └── demo\_groundwater.csv
+
 ├── models/
-│   ├── groundwater_model.joblib
+
+│   ├── groundwater\_model.joblib
+
 │   └── metrics.txt
+
 ├── scripts/
-│   ├── train_model.py
-│   └── download_real_data.py
+
+│   ├── train\_model.py
+
+│   └── download\_real\_data.py
+
 └── docs/
-    └── PPT_content.md
-```
+
+&#x20;   └── PPT\_content.md
+
+## ```
+
+## 
 
 *Note: The structure above reflects the intended project layout. File availability may vary by repository version.*
 
 ## 🔭 Future Improvements
 
-- Integrate verified government groundwater and rainfall datasets.
-- Improve feature engineering and data preprocessing.
-- Evaluate predictions using time-based train/test splits.
-- Compare multiple regression algorithms.
-- Add interactive district maps and location-based analysis.
-- Develop more robust early-warning alerts and recommendations.
-- Deploy the dashboard for public access.
+* Integrate verified government groundwater and rainfall datasets.
+* Improve feature engineering and data preprocessing.
+* Evaluate predictions using time-based train/test splits.
+* Compare multiple regression algorithms.
+* Add interactive district maps and location-based analysis.
+* Develop more robust early-warning alerts and recommendations.
+* Deploy the dashboard for public access.
 
 ## 🎯 What I Learned
 
-- Building an interactive dashboard with Streamlit.
-- Applying a regression model to a real-world environmental problem.
-- Organizing a Python machine learning project
+* Building an interactive dashboard with Streamlit.
+* Applying a regression model to a real-world environmental problem.
+* Organizing a Python machine learning project
+
