@@ -1,8 +1,8 @@
 ## 📸 Dashboard Preview
 
-!\[GroundWaterAI Dashboard 1](images/dashboard1.png)
+![GroundWaterAI Dashboard 1](images/dashboard1.png)
 
-!\[GroundWaterAI Dashboard 2](images/dashboard2.png)
+![GroundWaterAI Dashboard 2](images/dashboard2.png)
 
 *Groundwater predictions use synthetic demonstration data.*
 
