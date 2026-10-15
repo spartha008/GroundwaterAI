@@ -1,122 +1,140 @@
-# GroundWaterAI — Infothon MVP
+# 💧 GroundWaterAI — Groundwater Prediction & Risk Assessment
 
-AI-powered seasonal groundwater level prediction and early-warning prototype.
+An ML-powered prototype that predicts seasonal groundwater levels and classifies groundwater depletion risk using rainfall, temperature, historical groundwater depth, and estimated water extraction.
 
-## What this MVP does
+Built with Python and Streamlit as a hands-on machine learning and data science project.
 
-- Predicts groundwater depth from rainfall, temperature, previous groundwater level and an extraction index.
-- Provides LOW / MODERATE / HIGH / CRITICAL risk classification.
-- Gives a practical recommendation.
-- Shows historical groundwater trends.
-- Shows a district-level risk snapshot.
-- Runs as a local Streamlit web app.
+## 🚀 Features
 
-## Important data note
+- **Groundwater Prediction:** Estimates groundwater depth using a Gradient Boosting Regressor.
+- **Risk Classification:** Categorizes groundwater conditions into LOW, MODERATE, HIGH, and CRITICAL risk levels.
+- **Interactive Dashboard:** Adjust input parameters and explore updated predictions.
+- **Historical Trend Visualization:** Displays groundwater depth trends over time.
+- **Risk Assessment:** Provides recommendations based on the predicted risk level.
+- **District-Level Overview:** Presents a snapshot of groundwater risk across locations.
 
-The bundled `data/demo_groundwater.csv` is **synthetically generated** so the project works immediately without waiting for external downloads.
+## 🛠️ Tech Stack
 
-**Do not present the demo model metrics as real-world accuracy.**
+- **Language:** Python
+- **Dashboard:** Streamlit
+- **Machine Learning:** Scikit-learn
+- **Data Processing:** Pandas, NumPy
+- **Visualization:** Plotly
+- **Version Control:** Git and GitHub
 
-For the actual Infothon research version, replace the demo dataset with verified government data. The National Water Data Portal (NWDP/NWIC) provides Karnataka groundwater and rainfall datasets.
+## 🧠 Machine Learning Approach
 
-Useful official sources:
+The prototype uses a **Gradient Boosting Regressor** to estimate groundwater depth in metres below ground level.
 
-- NWDP Karnataka groundwater: https://www.nwdp.nwic.gov.in/en/dataset/ground-water-level-manual-daily-karnataka
-- NWDP Karnataka rainfall: https://www.nwdp.nwic.gov.in/en/dataset/rainfall-manual-daily-karnataka
-- CGWB groundwater monitoring: https://cgwb.gov.in/ground-water-level-monitoring
-- IMD rainfall information: https://mausam.imd.gov.in/responsive/rainfallinformation.php
+### Input Features
 
-## Windows setup
+1. Monthly rainfall
+2. Three-month cumulative rainfall
+3. Average temperature
+4. Estimated groundwater extraction index
+5. Previous groundwater depth
+6. Month of the year
 
-Open Command Prompt inside this folder:
+### Output
 
-```text
+- Predicted groundwater depth
+- Groundwater risk category
+- Risk-based recommendations
+
+## 📊 Data & Limitations
+
+**Current status: Demonstration prototype.**
+
+The bundled dataset (`data/demo_groundwater.csv`) contains synthetically generated data to make the application runnable without external data downloads.
+
+The current predictions and model metrics are intended for demonstration purposes and **do not establish real-world forecasting accuracy**.
+
+The next development step is to integrate verified groundwater and rainfall observations from official sources, align the datasets by location and time, and evaluate performance using time-based validation.
+
+### Potential Data Sources
+
+- [NWDP — Karnataka Groundwater Data](https://www.nwdp.nwic.gov.in/en/dataset/ground-water-level-manual-daily-karnataka)
+- [NWDP — Karnataka Rainfall Data](https://www.nwdp.nwic.gov.in/en/dataset/rainfall-manual-daily-karnataka)
+- [Central Ground Water Board (CGWB)](https://cgwb.gov.in/ground-water-level-monitoring)
+- [India Meteorological Department (IMD)](https://mausam.imd.gov.in/responsive/rainfallinformation.php)
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Python installed on your system
+- Git (optional, for cloning the repository)
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/sparthaa08/GroundWaterAI.git
+cd GroundWaterAI
+```
+
+**2. Create a virtual environment**
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate
+```
+
+**3. Activate the environment on Windows PowerShell**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell blocks activation, you can skip activation and use the environment's Python executable directly.
+
+**4. Install dependencies**
+
+```bash
 pip install -r requirements.txt
+```
+
+**5. Run the application**
+
+```bash
 streamlit run app.py
 ```
 
-Or double-click:
+Open the local URL displayed in your terminal, usually `http://localhost:8501`.
+
+## 📁 Project Structure
 
 ```text
-run_app.bat
-```
-
-The dashboard should open in your browser.
-
-## Project structure
-
-```text
-GroundWaterAI_MVP/
-│
+GroundWaterAI/
 ├── app.py
 ├── run_app.bat
 ├── requirements.txt
-│
 ├── data/
 │   └── demo_groundwater.csv
-│
 ├── models/
 │   ├── groundwater_model.joblib
 │   └── metrics.txt
-│
 ├── scripts/
 │   ├── train_model.py
 │   └── download_real_data.py
-│
 └── docs/
     └── PPT_content.md
 ```
 
-## ML model
+*Note: The structure above reflects the intended project layout. File availability may vary by repository version.*
 
-Current demo model:
+## 🔭 Future Improvements
 
-**Gradient Boosting Regressor**
+- Integrate verified government groundwater and rainfall datasets.
+- Improve feature engineering and data preprocessing.
+- Evaluate predictions using time-based train/test splits.
+- Compare multiple regression algorithms.
+- Add interactive district maps and location-based analysis.
+- Develop more robust early-warning alerts and recommendations.
+- Deploy the dashboard for public access.
 
-Input features:
+## 🎯 What I Learned
 
-1. Monthly rainfall
-2. 3-month rainfall
-3. Temperature
-4. Estimated extraction index
-5. Previous groundwater depth
-6. Month
-
-Output:
-
-**Predicted groundwater depth in metres below ground level.**
-
-## Recommended Infothon development path
-
-### Phase 1 — MVP
-Use the bundled demo data and make the dashboard work.
-
-### Phase 2 — Real data
-Download Karnataka groundwater + rainfall data from NWDP/NWIC.
-
-### Phase 3 — Data alignment
-Aggregate rainfall by district/month and join it with groundwater observations.
-
-### Phase 4 — Validation
-Use a time-based split instead of a random split and report MAE, RMSE and R².
-
-### Phase 5 — Deployment
-Add district maps, alerts, model comparison and a recommendation engine.
-
-## Judge demo flow
-
-1. Open dashboard.
-2. Select Mysuru.
-3. Show current groundwater depth.
-4. Change rainfall to a lower value.
-5. Click/use the updated prediction.
-6. Show predicted groundwater depth and risk.
-7. Explain the recommendation.
-8. Show the historical trend.
-9. Show the district risk table.
-
-## Strong one-line pitch
-
-"We don't just measure groundwater depletion — we predict it before it becomes critical."
+- Building an interactive dashboard with Streamlit.
+- Applying a regression model to a real-world environmental problem.
+- Organizing a Python machine learning project
