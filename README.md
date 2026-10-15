@@ -1,8 +1,8 @@
 ## 📸 Dashboard Preview
 
-![GroundWaterAI Dashboard 1](images/dashboard1.png)
+!\[GroundWaterAI Dashboard 1](images/dashboard1.png)
 
-![GroundWaterAI Dashboard 2](images/dashboard2.png)
+!\[GroundWaterAI Dashboard 2](images/dashboard2.png)
 
 *Groundwater predictions use synthetic demonstration data.*
 
@@ -53,7 +53,7 @@ The prototype uses a **Gradient Boosting Regressor** to estimate groundwater dep
 
 **Current status: Demonstration prototype.**
 
-The bundled dataset (`data/demo\_groundwater.csv`) contains synthetically generated data to make the application runnable without external data downloads.
+The bundled dataset (`data/demo\\\_groundwater.csv`) contains synthetically generated data to make the application runnable without external data downloads.
 
 The current predictions and model metrics are intended for demonstration purposes and **do not establish real-world forecasting accuracy**.
 
@@ -82,7 +82,7 @@ git clone https://github.com/spartha008/GroundwaterAI.git
 
 cd GroundwaterAI```
 
-**2. Create a virtual environment**
+\*\*2. Create a virtual environment\*\*
 
 ```bash
 python -m venv .venv
@@ -91,7 +91,7 @@ python -m venv .venv
 **3. Activate the environment on Windows PowerShell**
 
 ```powershell
-.\\.venv\\Scripts\\Activate.ps1
+.\\\\.venv\\\\Scripts\\\\Activate.ps1
 ```
 
 If PowerShell blocks activation, you can skip activation and use the environment's Python executable directly.
@@ -110,7 +110,7 @@ streamlit run app.py
 
 Open the local URL displayed in your terminal, usually `http://localhost:8501`.
 
-## 📁 ## 📁 Project Structure
+## \## 📁 Project Structure
 
 ## 
 
@@ -136,43 +136,43 @@ GroundWaterAI/
 
 ├── data/
 
-│   └── demo\_groundwater.csv
-
 ├── models/
-
-│   ├── groundwater\_model.joblib
-
-│   └── metrics.txt
 
 ├── scripts/
 
-│   ├── train\_model.py
-
-│   └── download\_real\_data.py
-
 └── docs/
 
-&#x20;   └── PPT\_content.md
+```
 
-## ```
+
+
+## \## 🔭 Future Improvements
 
 ## 
 
-*Note: The structure above reflects the intended project layout. File availability may vary by repository version.*
+\- Integrate verified government groundwater and rainfall datasets.
 
-## 🔭 Future Improvements
+\- Improve feature engineering and data preprocessing.
 
-* Integrate verified government groundwater and rainfall datasets.
-* Improve feature engineering and data preprocessing.
-* Evaluate predictions using time-based train/test splits.
-* Compare multiple regression algorithms.
-* Add interactive district maps and location-based analysis.
-* Develop more robust early-warning alerts and recommendations.
-* Deploy the dashboard for public access.
+\- Evaluate predictions using time-based train/test splits.
 
-## 🎯 What I Learned
+\- Compare multiple regression algorithms.
 
-* Building an interactive dashboard with Streamlit.
-* Applying a regression model to a real-world environmental problem.
-* Organizing a Python machine learning project
+\- Add interactive district maps and location-based analysis.
+
+\- Develop more robust early-warning alerts and recommendations.
+
+\- Deploy the dashboard for public access.
+
+## 
+
+## \## 🎯 What I Learned
+
+## 
+
+\- Building an interactive dashboard with Streamlit.
+
+\- Applying a regression model to an environmental problem.
+
+\- Organizing a Python machine learning project.
 
