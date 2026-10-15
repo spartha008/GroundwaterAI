@@ -1,11 +1,10 @@
 ## 📸 Dashboard Preview
 
-!\[GroundWaterAI Dashboard 1](images/dashboard1.png)
+![GroundWaterAI Dashboard 1](images/dashboard1.png)
 
-!\[GroundWaterAI Dashboard 2](images/dashboard2.png)
+![GroundWaterAI Dashboard 2](images/dashboard2.png)
 
 *Groundwater predictions use synthetic demonstration data.*
-
 # 💧 GroundWaterAI — Groundwater Prediction \& Risk Assessment
 
 An ML-powered prototype that predicts seasonal groundwater levels and classifies groundwater depletion risk using rainfall, temperature, historical groundwater depth, and estimated water extraction.
